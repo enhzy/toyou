@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Захидал 💌</title>
+
+  <style>
+    /* Ерөнхий стиль */
+    body {
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive;
+      background: linear-gradient(to bottom right, #ffc0cb, #ffffff);
+      height: 100vh;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    /* Стикерүүд */
+    .sticker {
+      width: 60px;
+      position: absolute;
+      top: 20px;
+      animation: swing 2s ease-in-out infinite;
+    }
+
+    @keyframes swing {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(10deg); }
+    }
+
+    .floating {
+      width: 60px;
+      position: absolute;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+    }
+
+    h1 {
+      margin-top: 160px;
+      font-size: 3.5em;
+      color: #d63384;
+      text-shadow: 2px 2px 6px white;
+    }
+
+    /* Захидал текст */
+    .letter {
+      max-width: 600px;
+      margin: 30px auto;
+      background-color: rgba(255, 255, 255, 0.85);
+      border-radius: 15px;
+      padding: 25px;
+      font-size: 1.2em;
+      line-height: 1.6;
+      color: #333;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    /* "Захидал" гарчиг */
+    .subtitle {
+      font-size: 2.2em;
+      color: #000000;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 4px #ffb6c1;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Дээд стикерүүд -->
+  <img src="img/1.png" class="sticker" style="left: 20%;" />
+  <img src="img/2.png" class="sticker" style="left: 50%; animation-delay: 0.2s;" />
+  <img src="img/3.png" class="sticker" style="left: 80%; animation-delay: 0.4s;" />
+<!-- Дээд буланд байрлах буцах товч -->
+
+<button onclick="window.location.href='index.html'" class="back-button">← Буцах</button>
+
+<style>
+  .back-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 18px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 1em;
+    cursor: pointer;
+    z-index: 999;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+  }
+
+  .back-button:hover {
+    background-color: #ff1493;
+  }
+.signature {
+  text-align: right;
+  margin-top: 60px;
+  color: #444;
+  font-size: 1.1em;
+  font-family: 'Comic Sans MS', cursive;
+  padding-right: 10px;
+  opacity: 0.9;
+}
+</style>
+
+  <!-- Гарчиг -->
+  <h1>LETTER FOR U</h1>
+
+  <!-- Захидлын хэсэг -->
+  <div class="letter">    <p>
+      Чамдаа энэ өдрийн мэнд хүргэе.! 💖<br />
+ Үргэлж миний найз байж, миний тухай жижиг зүйлсийг ч санаж бүр яг жинхэнэ найз байж чаддагт чинь үнэхээр баярлалаа. Хаяадаа бүх зүйлд сэтгэлээр унаж болимоор санагдах цаг үе бүхэнд чиний надад хийж өгсөн бүх зүйлс дахиад ганцхан өдөр хичээх урам зориг өгдөг юм шүү. Би өөрийгөө чамтай найзалж, ийм нөхөрлөлтэй учирсандаа азтайд тооцох хэрэгтэй биз. Тийм учраас чамайг ч бас ганцаараа биш үргэлж би байгаа гэдгийг санаж амьдраасай гэж хүсэж байна. Миний амьдралыг дүүргэж өгдөг чамдаа энэ онцгой өдрийн мэнд хүргэе. ТӨРСӨН ӨДРИЙН МЭНД, БАЯРЛАЛАА.
+                                  <!-- Гарын үсгийн хэсэг -->
+<div class="signature">
+  <div>Yours sincerely~ Zya</div>
+  <div>TO~ Ynja</div>
+<div>2025.08.04</div>
+</div>
+
+    </p>
+  </div>
+
+  <!-- Доод стикерүүд -->
+  <img src="img/4.png" class="floating" style="left: 15%; bottom: 40px;" />
+  <img src="img/5.png" class="floating" style="left: 50%; bottom: 60px; animation-delay: 0.5s;" />
+  <img src="img/6.gif" class="floating" style="left: 85%; bottom: 100px; animation-delay: 1s;" />
+
+</body>
+</html>

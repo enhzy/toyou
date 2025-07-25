@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To You 🎁</title>
+
+  <style>
+    /* 1. Ерөнхий стиль */
+    body {
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive;
+      background: linear-gradient(to bottom right, #ffc0cb, #ffffff); /* Ягаанаас цагаан уусалт */
+      height: 100vh;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    /* 2. Дүүжлэгдэж савлаж буй стикерүүд */
+    .sticker {
+      width: 60px;
+      position: absolute;
+      top: 20px;
+      animation: swing 2s ease-in-out infinite;
+    }
+
+    /* 3. Савлах анимэйшн */
+    @keyframes swing {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(10deg); }
+    }
+
+    /* 4. Хөвж буй доод стикерүүд */
+    .floating {
+      width: 60px;
+      position: absolute;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    /* 5. Хөвөх анимэйшн */
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+    }
+
+    /* 6. Гарчиг */
+    h1 {
+      margin-top: 170px;
+      font-size: 3.5em;
+      color: #d63384;
+      text-shadow: 2px 2px 6px white;
+    }
+
+    /* 7. Товч */
+    .button {
+      margin-top: 30px;
+      padding: 12px 28px;
+      background: #ff69b4;
+      border: none;
+      border-radius: 12px;
+      color: white;
+      font-weight: bold;
+      font-size: 1.3em;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background: #ff1493;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 8. Дээд стикерүүд (3 ш) -->
+  <img src="img/1.png" class="sticker" style="left: 20%;" />
+  <img src="img/2.png" class="sticker" style="left: 50%; animation-delay: 0.2s;" />
+  <img src="img/3.png" class="sticker" style="left: 80%; animation-delay: 0.4s;" />
+
+  <!-- 9. Гол гарчиг -->
+  <h1>~FOR YOU~</h1>
+
+  <!-- 10. Товч -->
+  <button class="button" onclick="location.href='zahidal.html'">TAP HERE</button>
+
+  <!-- 11. Доод стикерүүд (3 ш) -->
+  <img src="img/4.png" class="floating" style="left: 15%; bottom: 40px;" />
+  <img src="img/5.png" class="floating" style="left: 50%; bottom: 60px; animation-delay: 0.5s;" />
+  <img src="img/6.gif" class="floating" style="left: 85%; bottom: 100px; animation-delay: 1s;" />
+
+</body>
+</html>
+
